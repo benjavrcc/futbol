@@ -75,7 +75,7 @@ function llenarcasilla(x, letra) {
 
 function actualizarahorcado(n) {
     const ahorcado = document.getElementById("imagen-ahorcado");
-    ahorcado.src = `/Futboldle/fotos/AH${n}.png`;
+    ahorcado.src = `fotos/AH${n}.png`;
 };
 
 botonLetra.onclick = function() {
@@ -110,7 +110,7 @@ botonLetra.onclick = function() {
         const fila = document.getElementById("fila-nombre");
         fila.innerHTML = ""; 
         const ahorcado = document.getElementById("imagen-ahorcado");
-        ahorcado.src = `/Futboldle/fotos/game_over.png`;
+        ahorcado.src = `fotos/game_over.png`;
         playagain.style.display = "block";
     };
     char.value = "";
@@ -127,7 +127,7 @@ botonEnviar.onclick = function() {
             const fila = document.getElementById("fila-nombre");
             fila.innerHTML = ""; 
             const ahorcado = document.getElementById("imagen-ahorcado");
-            ahorcado.src = `/Futboldle/fotos/game_over.png`;
+            ahorcado.src = `fotos/game_over.png`;
             playagain.style.display = "block";
         };
         return;
