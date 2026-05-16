@@ -129,6 +129,7 @@ botonEnviar.onclick = function() {
             const ahorcado = document.getElementById("imagen-ahorcado");
             ahorcado.src = `./fotos/game_over.png`;
             playagain.style.display = "block";
+            console.log(palabraSecreta);
         };
         return;
     }
