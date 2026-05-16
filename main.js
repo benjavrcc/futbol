@@ -132,6 +132,7 @@ botonEnviar.onclick = function() {
             const mostrar = document.getElementById("jugadorsecreto");
             const pplayer = document.createElement("div");
             pplayer.textContent = palabraSecreta;
+            mostrar.appendChild(<p> Perdiste, el jugador era:</p>);
             mostrar.appendChild(pplayer);
         };
         return;
