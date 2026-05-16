@@ -1,0 +1,147 @@
+
+:root {
+    --fondo: #ffffff;
+    --texto: #000000;
+    --borde: #d3d6da;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dark-mode {
+    --fondo: #121213;
+    --texto: #ffffff;
+    --borde: #3a3a3c;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: var(--fondo);
+    color: var(--texto);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s; 
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+
+#tablero {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.fila {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.casilla {
+    padding: 20px 20px;
+    border: 2px solid var(--borde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.correcto {
+    background-color: #6aaa64;
+    color: white;
+    border-color: #6aaa64;
+}
+
+.presente {
+    background-color: #c9b458;
+    color: white;
+    border-color: #c9b458;
+}
+
+.ausente {
+    background-color: #787c7e;
+    color: white;
+    border-color: #787c7e;
+}
+
+.controles {
+    display: flex;
+    margin-top: 20px;
+    gap:30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intento-usuario {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid var(--borde);
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#intento-letra {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid var(--borde);
+}
+
+#imagen-ahorcado {
+    width: 400px;
+    height: 350px;
+}
+
+#boton-ir-ahorcado {
+    margin-top: 60px;
+    padding: 20px 50px;
+    font-size: 22px;
+}
+#juego a {
+    text-decoration: none;
+    color:#000000;
+}

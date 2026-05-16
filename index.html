@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Futboldle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="#juego">Jugar</a>
+        <a href="#instrucciones">¿Cómo jugar?</a>
+        <a href="#stats">Estadísticas</a>
+    </nav>
+
+    <header id="juego">
+        <a href="landingpage.html"><h1>FUTBOLDLE ⚽</h1></a>
+        <p>Adivina el jugador de fútbol</p>
+        
+        <button type="button" id="boton-oscuro">Cambiar Modo</button>
+    </header>
+
+    <main class="contenedor-principal">
+        <div class="fila" id="fila-nombre"></div>
+        <button type="button" id="boton-obtener"> Iniciar juego </button>
+
+        <img id="imagen-ahorcado" src="\Futboldle\fotos\AH1.png">
+        <div id="reiniciar">
+            <button type="button" id="boton-reiniciar", di> Jugar de nuevo </button>
+        </div>
+
+        <div class="controles">
+            <div>
+                <input type="text" id="intento-letra" placeholder="Escribe una letra">
+                <button type="button "id="boton-letra">Enviar letra</button>
+            </div>
+            <div>
+                <input type="text" id="intento-usuario" placeholder="Escribe tu jugador">
+                <button id="boton-enviar">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="instrucciones">
+        <h2>Instrucciones</h2>
+        <ul>
+            <li>Escribe letras para adivinar el futbolista, evita que el personaje muera!.</li>
+            <li>La unica respuesta definitiva es el nombre completo del jugador</li>
+            <li>Si completas las letras, escribe el nombre del jugador abajo</li>
+            <li>Recuerda escribir sin tildes!</li>
+        </ul>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
