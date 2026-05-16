@@ -129,6 +129,10 @@ botonEnviar.onclick = function() {
             const ahorcado = document.getElementById("imagen-ahorcado");
             ahorcado.src = `./fotos/game_over.png`;
             playagain.style.display = "block";
+            const mostrar = document.getElementById("jugadorsecreto");
+            const pplayer = document.createElement("div");
+            pplayer.textContent = palabraSecreta;
+            mostrar.appendChild(pplayer);
         };
         return;
     }
@@ -141,8 +145,6 @@ botonEnviar.onclick = function() {
     entrada.value = "";
 };
     
-
-
 
 
 const botonOscuro = document.getElementById("boton-oscuro");
